@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Drophex</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <style>
+        /* Estilos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Sección Hero */
+.hero-image {
+    background-image: url('ruta/a/tu-imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-image h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-image p {
+    font-size: 1.5rem;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Capa oscura */
+}
+
+/* Estilos para las secciones */
+.info-section {
+    padding: 60px 0;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+    <header>
+        <div class="container">
+            <h1>Farmacia Drophex</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#cart">🛒 Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero con Imagen de Fondo -->
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <div class="container">
+                <h2>Bienvenido a Farmacia Drophex</h2>
+                <p>Tu salud es nuestra prioridad. Encuentra los mejores productos farmacéuticos aquí.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una droguería que apuesta al desarrollo del país y a los nuevos emprendedores...en el mundo farmacéutico contando con un equipo humano joven y bien capacitado en su áreas.</p>
+        </div>
+    </section>
+
+    <section id="services" class="info-section">
+        <div class="container">
+            <h2>Servicios</h2>
+            <p>Lista de los servicios que ofrece la farmacia, como atención al cliente, entrega a domicilio, etc.</p>
+            <a href="servicios.html" class="btn">Ver más sobre nuestros servicios</a>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@drophex.com</p>
+        </div>
+    </section>
+
+    <section id="cart" class="info-section">
+        <div class="container">
+            <h2>Carrito de Compras</h2>
+            <p>Aquí podrás ver y gestionar los productos que has agregado a tu carrito.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farmacia Drophex. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
