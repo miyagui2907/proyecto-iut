@@ -4,129 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Drophex</title>
-    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <style>
-        /* Estilos para la página */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #004d99;
-    color: white;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Sección Hero */
-.hero-image {
-    background-image: url('ruta/a/tu-imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-image h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.hero-image p {
-    font-size: 1.5rem;
-}
-
-.hero-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Capa oscura */
-}
-
-/* Estilos para las secciones */
-.info-section {
-    padding: 60px 0;
-}
-
-.info-section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.info-section p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.btn {
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-    padding: 10px 0;
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-}
-
-footer {
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-    </style>
     <header>
-        <div class="container">
-            <h1>Farmacia Drophex</h1>
+        <div class="container-header">
+            <img class="logo-header" src="./imagenes/logo-white.png" alt="Logo Drophex">
             <nav>
                 <ul>
                     <li><a href="#home">Inicio</a></li>
@@ -141,10 +24,13 @@ footer p {
 
     <!-- Sección Hero con Imagen de Fondo -->
     <section id="home" class="hero">
-        <div class="hero-image">
-            <div class="container">
-                <h2>Bienvenido a Farmacia Drophex</h2>
-                <p>Tu salud es nuestra prioridad. Encuentra los mejores productos farmacéuticos aquí.</p>
+        <div class="hero-container">
+            <div class="hero-content">
+                
+                <h2>Bienvenido a <br/> Farmacia Drophex</h2>
+                <p>Tu salud es nuestra prioridad. Ofrecemos los mejores productos farmacéuticos.</p>
+                <button>Encuentralos aquí</button>
+                
             </div>
         </div>
     </section>
