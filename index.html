@@ -4,129 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmacia Drophex</title>
-    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <style>
-        /* Estilos para la página */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #004d99;
-    color: white;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Sección Hero */
-.hero-image {
-    background-image: url('ruta/a/tu-imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.hero-image h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.hero-image p {
-    font-size: 1.5rem;
-}
-
-.hero-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Capa oscura */
-}
-
-/* Estilos para las secciones */
-.info-section {
-    padding: 60px 0;
-}
-
-.info-section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.info-section p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.btn {
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-    padding: 10px 0;
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-}
-
-footer {
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-    </style>
     <header>
-        <div class="container">
-            <h1>Farmacia Drophex</h1>
+        <div class="container-header">
+            <img class="logo-header" src="./imagenes/logo-white.png" alt="Logo Drophex">
             <nav>
                 <ul>
                     <li><a href="#home">Inicio</a></li>
@@ -141,47 +24,76 @@ footer p {
 
     <!-- Sección Hero con Imagen de Fondo -->
     <section id="home" class="hero">
-        <div class="hero-image">
-            <div class="container">
-                <h2>Bienvenido a Farmacia Drophex</h2>
-                <p>Tu salud es nuestra prioridad. Encuentra los mejores productos farmacéuticos aquí.</p>
+        <div class="hero-container">
+            <div class="hero-content">
+                
+                <h2>Bienvenido a <br/> Farmacia Drophex</h2>
+                <p>Tu salud es nuestra prioridad. Ofrecemos los mejores productos farmacéuticos.</p>
+                <button>Encuentralos aquí</button>
+                
             </div>
         </div>
     </section>
 
-    <section id="about" class="info-section">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos una droguería que apuesta al desarrollo del país y a los nuevos emprendedores...en el mundo farmacéutico contando con un equipo humano joven y bien capacitado en su áreas.</p>
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="/imagenes/about-us.png" alt="Sobre nosotros"/>
+            </div>
+            <div class="about-text">
+                <h2>Sobre Nosotros</h2>
+                <p>Drophex nace en el 2002 con un sueño: cambiar el panorama farmacéutico. Nuestra visión como grupo de profesionales apasionados por la salud, busca ofrecer una alternativa más accesible y eficiente a la población.</p>
+                <p>Impulsados por este profundo deseo estamos comprometidos con la innovación y mejoramos el acceso a medicamentos de calidad. Embarcados en un viaje que nos llevó a fundar Drophex y con el objetivo de llevar la salud a más personas,</p>
+                <h3>nos enfocamos en la fabricación de productos de alta calidad y la creación de una red de distribución eficiente.</h3>
+            </div>
         </div>
     </section>
 
-    <section id="services" class="info-section">
-        <div class="container">
+    <section id="services">
+        <div class="services-container">
             <h2>Servicios</h2>
-            <p>Lista de los servicios que ofrece la farmacia, como atención al cliente, entrega a domicilio, etc.</p>
-            <a href="servicios.html" class="btn">Ver más sobre nuestros servicios</a>
-        </div>
-    </section>
-
-    <section id="contact" class="info-section">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
-            <p>Teléfono: +123 456 7890</p>
-            <p>Email: contacto@drophex.com</p>
-        </div>
-    </section>
-
-    <section id="cart" class="info-section">
-        <div class="container">
-            <h2>Carrito de Compras</h2>
-            <p>Aquí podrás ver y gestionar los productos que has agregado a tu carrito.</p>
+            <p>Lista de los servicios que ofrece la farmacia, como atención al cliente, entrega a domicilio, entre otros.</p>
+            <div class="list-services">
+                <ul>
+                    <li>
+                        <div class="service">
+                            <img src="imagenes/venta-de-medicamentos.jpeg" alt="Venta de medicamentos" />
+                            <h3>Venta de medicamentos</h3>
+                            <p>Contamos con un amplio catálogo de medicamentos de venta libre y bajo receta médica, de las marcas más reconocidas a nivel nacional e internacional.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service">
+                            <img src="imagenes/fabricacion-de-productos-farmaceuticos.jpg" alt="Fabricación de productos farmaceuticos" />
+                            <h3>Fabricación de productos farmacéuticos</h3>
+                            <p>Nuestra planta de producción cumple con los más altos estándares de calidad y seguridad, garantizando la eficacia y la seguridad de nuestros productos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service">
+                            <img src="imagenes/exportaciones-de-medicamentos.jpg" alt="Exportación de medicamentos" />
+                            <h3>Exportación de medicamentos</h3>
+                            <p>Ofrecemos servicios de exportación de medicamentos a diferentes países, contribuyendo al acceso a la salud en todo el mundo.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="contact-container">
+            <div class="logo-footer">
+                <img src="/imagenes/logo-white.png" alt="">
+            </div>
+            <div class="contact-data">
+                <h3>Contacto</h3>
+                <p>Calle Ejemplo 123, Ciudad, País</p>
+                <p>+123 456 7890</p>
+                <p>contacto@drophex.com</p>
+            </div>
+        </div>
+        <div class="derechos">
             <p>&copy; 2024 Farmacia Drophex. Todos los derechos reservados.</p>
         </div>
     </footer>
