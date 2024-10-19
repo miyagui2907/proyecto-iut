@@ -96,10 +96,6 @@ nav ul li a {
     height: 100vh;
 }
 
-.about-img {
-    
-}
-
 .about-text {
     display: flex;
     flex-direction: column;
