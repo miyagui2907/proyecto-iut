@@ -110,4 +110,5 @@ footer {
 
 .container-prize a{
     padding-left: 20px;
+    cursor: pointer;
 }
