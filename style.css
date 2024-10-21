@@ -81,10 +81,7 @@ nav ul li a {
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
-}
-
-.hero-content a {
-    
+    cursor: pointer;
 }
 
 .hero-content button:hover {
