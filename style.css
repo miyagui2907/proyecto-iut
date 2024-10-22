@@ -30,6 +30,7 @@ header {
 
 .logo-header{
     width: 20%;
+    cursor: pointer;
 }
 
 nav ul {
